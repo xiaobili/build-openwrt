@@ -166,6 +166,7 @@ jobs:
         run: cd openwrt/ && ./scripts/feeds update -a
       - name: Init Kenzok8 Small Package
         run: |
+          cd openwrt/
           rm -rf feeds/luci/applications/luci-app-mosdns
           rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
           rm -rf feeds/packages/utils/v2dat
