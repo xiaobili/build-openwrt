@@ -10,7 +10,7 @@ name: 通用设备编译固件
       source_branch:
         description: "Select the source branch"
         required: false
-        默认: "openwrt-main"
+        默认: "lede-master"
         输入: choice
         options:
           - openwrt-main
